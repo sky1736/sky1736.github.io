@@ -1,0 +1,443 @@
+.size_select{display: none;}
+
+/* --------- PC ---------- */
+@media screen and (min-width:1201px){
+
+/* -------common ------- */
+.contents{position: relative; width:1200px; margin: 100px auto;}
+.contents .page_title{font-size: 2em; font-weight: bold; margin-bottom: 50px; }
+.contents .page_info{font-size: 1.3em; margin-bottom: 50px; }
+.btn{display: block; width: 300px; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; transition-duration: 0.6s;}
+.btn:hover{background-color: #000; color: #FFF;}
+
+
+/* ----------join start ---------- */
+#join h2{text-align: center;}
+#join table{width: 600px; margin: 30px auto;}
+#join table th,#join table td{width: 50%; padding: 10px; box-sizing: border-box;}
+#join table th{text-align: left; font-weight: normal; font-size: 1.4em;}
+#join table td{font-size: 0.9em;}
+#join table td input[type=text], #join table td input[type=password]{width: 100%; height: 30px; border: 1px solid #222;}
+#join table td.bd_td>input{width: 32%;}
+#join table td.bd_td select{width: 32%; height: 32px; border: 1px solid #222;}
+#join table tr:last-child td input[type=text]{width: 180px;}
+#join .join_btn{width: 90px; height: 30px; background-color: #222; color: #FFF; font-size:0.9em;}
+#join .agree{position: relative; margin: 30px 0; text-align: center;}
+#join .agree>*{margin-bottom: 15px;}
+#join .agree h3{font-size: 1.2em;}
+/* ----------join end ---------- */
+
+
+/* -----------login start----------- */
+#login .login_inner{position: relative; width: 300px; margin: 100px auto; ;}
+#login .login_inner h2{text-align: center;}
+#login .login_inner div{margin-bottom: 15px;}
+#login .login_inner #my_id,#login .login_inner #my_pw{width: 100%; border: 1px solid #000; height: 30px;}
+#login .login_inner form div:nth-child(3){display: flex; justify-content: space-between;}
+#login .login_inner #login_btn{width: 100%; height: 30px; background-color: #000; color: #FFF;}
+#login .login_inner .other_login{display: flex; justify-content: space-between;}
+#login .login_inner .other_login a{display: flex;}
+#login .login_inner>a:last-child{text-align: center; display: block; color: #666; font-size: 0.9em;}
+
+/* -----------login end----------- */
+
+
+/* ----------men start------- */
+#men .png{margin-bottom: 50px; }
+#men .product_list{position: relative;}
+#men .product_list .filter{position: relative; display: flex; justify-content: flex-end;}
+#men .product_list .filter img{margin-left: 10px;}
+#men .product_list .list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#men .product_list .list li{width: 32%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; padding-bottom: 20px;overflow: hidden;}
+#men .product_list .list li img{width: 100%; transition-duration: 0.6s;}
+#men .product_list .list li img:hover{transform: scale(1.05);}
+#men .product_list .list li h3{font-size: 1.2em; font-weight: bold; margin-bottom:10px; margin-top: -30px; position: relative;}
+#men .product_list .btn{margin: 0 auto;}
+/* ----------men end------- */
+
+/* ----------detail start------- */
+#detail .detail_top{position: relative; display: flex;}
+#detail .detail_top>div{position: relative; width: 50%;}
+#detail .detail_top_img img{width: 100%;}
+#detail .detail_top_info{padding-left: 50px; display: flex; flex-direction: column; justify-content: space-evenly; box-sizing: border-box;}
+#detail .detail_top_info>div:last-child{margin-bottom: 0}
+#detail .detail_top_info h2{font-size: 1.8em;}
+#detail .detail_top_info .price{font-size: 1.4em; }
+#detail .detail_top_info .description li{line-height: 1.6em;}
+#detail .detail_top_info h3{font-size: 1.1em ; font-weight: bold; margin-bottom: 10px;}
+#detail .detail_top_info .color ul{display: flex; margin-top: 10px;}
+#detail .detail_top_info .color ul li{margin-right: 10px; padding: 3px; border: 1px solid #FFF; transition-duration: 0.5s;}
+#detail .detail_top_info .color ul li:hover{border-color: #000;}
+#detail .detail_top_info .size ul{display:flex; border-left: 1px solid #000; margin-top: 10px;}
+#detail .detail_top_info .size ul li{width:14.2857%; text-align: center; line-height: 40px; border: 1px solid #000; border-left: none; transition-duration: 0.5s;}
+#detail .detail_top_info .size ul li:hover{background-color: #f6f4df;}
+#detail .detail_top_info .buy{display: flex; justify-content: space-between;}
+#detail .detail_top_info .buy .buy_btn{display: block; width: 47%; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; font-size: 1.2em; transition-duration: 0.5s;}
+#detail .detail_top_info .buy .btn_cart:hover{background-color:#ffd7d8 ;}
+#detail .detail_top_info .buy .btn_buy:hover{background-color:#b8e3ea ;}
+#detail .detail_center{position: relative; margin: 100px 0; display: flex; flex-direction: column;}
+#detail .detail_center>img{width: 50%; margin-bottom: 50px;}
+#detail .detail_center>img:nth-of-type(2n){align-self: flex-end;}
+#detail .detail_center>img:last-child{align-self: center}
+#detail .detail_center .detail_delivery{display: flex; flex-direction: column; align-items: center;}
+#detail .detail_center .detail_delivery p{color: #999; margin: 50px 0;}
+#detail .other{position: relative;}
+#detail .other h3{font-size: 1.8em; margin-bottom: 30px;}
+#detail .other .other_list{display: flex; justify-content: space-between;}
+#detail .other .other_list li{width: 32%; text-align: center;}
+#detail .other .other_list li img{width: 100%;}
+#detail .other .other_list li h4{font-size: 1.1em; margin:20px 0 10px 0;}
+/* ----------detail end------- */
+
+/* ----------collabo start------- */
+#collabo .collabo_top{position: relative ; display: flex;}
+#collabo .collabo_video{width: 60%;}
+#collabo .collabo_video video{width: 100%;}
+#collabo .collabo_text{padding-left: 30px; width: 40%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+#collabo .collabo_text h3{font-size: 2.8em; font-weight: normal; margin-bottom: 10px;}
+#collabo .collabo_list{position: relative; margin-top: 50px;}
+#collabo .collabo_list h2{font-size: 1.8em; margin-bottom: 30px;}
+#collabo .collabo_list ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+#collabo .collabo_list li{width: 32%; margin-bottom: 2%;}
+#collabo .collabo_list li img{width: 100%; }
+#collabo .btn{margin: 50px auto;}
+#collabo .collabo_bottom{position: relative; display: flex; justify-content: center;}
+/* ----------collabo end------- */
+   
+}
+
+
+
+
+/* --------- Tablet 가로 ---------- */
+@media screen and (min-width:901px) and (max-width:1200px){
+
+   /* -------common ------- */
+   .contents{position: relative; width:92%; margin: 100px auto;}
+   .contents .page_title{font-size: 2em; font-weight: bold; margin-bottom: 50px; }
+   .contents .page_info{font-size: 1.3em; margin-bottom: 50px; }
+   .btn{display: block; width: 300px; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; transition-duration: 0.6s;}
+   .btn:hover{background-color: #000; color: #FFF;}
+   
+   
+   /* ----------join start ---------- */
+   #join h2{text-align: center;}
+   #join table{width: 600px; margin: 30px auto;}
+   #join table th,#join table td{width: 50%; padding: 10px; box-sizing: border-box;}
+   #join table th{text-align: left; font-weight: normal; font-size: 1.4em;}
+   #join table td{font-size: 0.9em;}
+   #join table td input[type=text], #join table td input[type=password]{width: 100%; height: 30px; border: 1px solid #222;}
+   #join table td.bd_td>input{width: 32%;}
+   #join table td.bd_td select{width: 32%; height: 32px; border: 1px solid #222;}
+   #join table tr:last-child td input[type=text]{width: 180px;}
+   #join .join_btn{width: 90px; height: 30px; background-color: #222; color: #FFF; font-size:0.9em;}
+   #join .agree{position: relative; margin: 30px 0; text-align: center;}
+   #join .agree>*{margin-bottom: 15px;}
+   #join .agree h3{font-size: 1.2em;}
+   /* ----------join end ---------- */
+   
+   
+   /* -----------login start----------- */
+   #login .login_inner{position: relative; width: 300px; margin: 100px auto; ;}
+   #login .login_inner h2{text-align: center;}
+   #login .login_inner div{margin-bottom: 15px;}
+   #login .login_inner #my_id,#login .login_inner #my_pw{width: 100%; border: 1px solid #000; height: 30px;}
+   #login .login_inner form div:nth-child(3){display: flex; justify-content: space-between;}
+   #login .login_inner #login_btn{width: 100%; height: 30px; background-color: #000; color: #FFF;}
+   #login .login_inner .other_login{display: flex; justify-content: space-between;}
+   #login .login_inner .other_login a{display: flex;}
+   #login .login_inner>a:last-child{text-align: center; display: block; color: #666; font-size: 0.9em;}
+   
+   /* -----------login end----------- */
+   
+   
+   /* ----------men start------- */
+   #men .png{margin-bottom: 50px; }
+   #men .product_list{position: relative;}
+   #men .product_list .filter{position: relative; display: flex; justify-content: flex-end;}
+   #men .product_list .filter img{margin-left: 10px;}
+   #men .product_list .list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+   #men .product_list .list li{width: 32%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; padding-bottom: 20px;overflow: hidden;}
+   #men .product_list .list li img{width: 100%; transition-duration: 0.6s;}
+   #men .product_list .list li img:hover{transform: scale(1.05);}
+   #men .product_list .list li h3{font-size: 1.2em; font-weight: bold; margin-bottom:10px; margin-top: -30px; position: relative;}
+   #men .product_list .btn{margin: 0 auto;}
+   /* ----------men end------- */
+   
+   /* ----------detail start------- */
+   #detail .detail_top{position: relative; display: flex;}
+   #detail .detail_top>div{position: relative; width: 50%;}
+   #detail .detail_top_img img{width: 100%;}
+   #detail .detail_top_info{padding-left: 50px; display: flex; flex-direction: column; justify-content: space-evenly; box-sizing: border-box;}
+   #detail .detail_top_info>div:last-child{margin-bottom: 0}
+   #detail .detail_top_info h2{font-size: 1.8em;}
+   #detail .detail_top_info .price{font-size: 1.4em; }
+   #detail .detail_top_info .description li{line-height: 1.6em;}
+   #detail .detail_top_info h3{font-size: 1.1em ; font-weight: bold; margin-bottom: 10px;}
+   #detail .detail_top_info .color ul{display: flex; margin-top: 10px;}
+   #detail .detail_top_info .color ul li{margin-right: 10px; padding: 3px; border: 1px solid #FFF; transition-duration: 0.5s;}
+   #detail .detail_top_info .color ul li:hover{border-color: #000;}
+   #detail .detail_top_info .size ul{display:flex; border-left: 1px solid #000; margin-top: 10px;}
+   #detail .detail_top_info .size ul li{width:14.2857%; text-align: center; line-height: 40px; border: 1px solid #000; border-left: none; transition-duration: 0.5s;}
+   #detail .detail_top_info .size ul li:hover{background-color: #f6f4df;}
+   #detail .detail_top_info .buy{display: flex; justify-content: space-between;}
+   #detail .detail_top_info .buy .buy_btn{display: block; width: 47%; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; font-size: 1.2em; transition-duration: 0.5s;}
+   #detail .detail_top_info .buy .btn_cart:hover{background-color:#ffd7d8 ;}
+   #detail .detail_top_info .buy .btn_buy:hover{background-color:#b8e3ea ;}
+   #detail .detail_center{position: relative; margin: 100px 0; display: flex; flex-direction: column;}
+   #detail .detail_center>img{width: 50%; margin-bottom: 50px;}
+   #detail .detail_center>img:nth-of-type(2n){align-self: flex-end;}
+   #detail .detail_center>img:last-child{align-self: center}
+   #detail .detail_center .detail_delivery{display: flex; flex-direction: column; align-items: center;}
+   #detail .detail_center .detail_delivery p{color: #999; margin: 50px 0;}
+   #detail .other{position: relative;}
+   #detail .other h3{font-size: 1.8em; margin-bottom: 30px;}
+   #detail .other .other_list{display: flex; justify-content: space-between;}
+   #detail .other .other_list li{width: 32%; text-align: center;}
+   #detail .other .other_list li img{width: 100%;}
+   #detail .other .other_list li h4{font-size: 1.1em; margin:20px 0 10px 0;}
+   /* ----------detail end------- */
+   
+   /* ----------collabo start------- */
+   #collabo .collabo_top{position: relative ; display: flex;}
+   #collabo .collabo_video{width: 60%;}
+   #collabo .collabo_video video{width: 100%;}
+   #collabo .collabo_text{padding-left: 30px; width: 40%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+   #collabo .collabo_text h3{font-size: 2.8em; font-weight: normal; margin-bottom: 10px;}
+   #collabo .collabo_list{position: relative; margin-top: 50px;}
+   #collabo .collabo_list h2{font-size: 1.8em; margin-bottom: 30px;}
+   #collabo .collabo_list ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+   #collabo .collabo_list li{width: 32%; margin-bottom: 2%;}
+   #collabo .collabo_list li img{width: 100%; }
+   #collabo .btn{margin: 50px auto;}
+   #collabo .collabo_bottom{position: relative; display: flex; justify-content: center;}
+   /* ----------collabo end------- */
+      
+   }
+
+
+
+
+
+/* --------- Tablet 세로 ---------- */
+@media screen and (min-width:601px) and (max-width:900px){
+
+   /* -------common ------- */
+   .contents{position: relative; width:92%; margin: 100px auto 50px auto;}
+   .contents .page_title{font-size: 1.6em; font-weight: bold; margin-bottom: 50px; }
+   .contents .page_info{font-size: 1.1em; margin-bottom: 50px; }
+   .btn{display: block; width: 300px; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; transition-duration: 0.6s;}
+   .btn:hover{background-color: #000; color: #FFF;}
+   
+   
+   /* ----------join start ---------- */
+   #join h2{text-align: center;}
+   #join table{width: 100%; margin: 30px auto;}
+   #join table th{width: 40%; padding: 10px; box-sizing: border-box;}
+   #join table td{width: 60%; padding: 10px; box-sizing: border-box;}
+   #join table th{text-align: left; font-weight: normal; font-size: 1.4em;}
+   #join table td{font-size: 0.9em;}
+   #join table td input[type=text], #join table td input[type=password]{width: 100%; height: 30px; border: 1px solid #222;}
+   #join table td.bd_td>input{width: 32%;}
+   #join table td.bd_td select{width: 32%; height: 32px; border: 1px solid #222;}
+   #join table tr:last-child td input[type=text]{width: 180px;}
+   #join .join_btn{width: 90px; height: 30px; background-color: #222; color: #FFF; font-size:0.9em;}
+   #join .agree{position: relative; margin: 30px 0; text-align: center;}
+   #join .agree>*{margin-bottom: 15px;}
+   #join .agree h3{font-size: 1.2em;}
+   /* ----------join end ---------- */
+   
+   
+   /* -----------login start----------- */
+   #login .login_inner{position: relative; width: 300px; margin: 100px auto; ;}
+   #login .login_inner h2{text-align: center;}
+   #login .login_inner div{margin-bottom: 15px;}
+   #login .login_inner #my_id,#login .login_inner #my_pw{width: 100%; border: 1px solid #000; height: 30px;}
+   #login .login_inner form div:nth-child(3){display: flex; justify-content: space-between;}
+   #login .login_inner #login_btn{width: 100%; height: 30px; background-color: #000; color: #FFF;}
+   #login .login_inner .other_login{display: flex; justify-content: space-between;}
+   #login .login_inner .other_login a{display: flex;}
+   #login .login_inner>a:last-child{text-align: center; display: block; color: #666; font-size: 0.9em;}
+   
+   /* -----------login end----------- */
+   
+   
+   /* ----------men start------- */
+   #men .png{margin-bottom: 50px; }
+   #men .product_list{position: relative;}
+   #men .product_list .filter{position: relative; display: flex; justify-content: flex-end;}
+   #men .product_list .filter img{margin-left: 10px;}
+   #men .product_list .list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+   #men .product_list .list li{width: 32%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; padding-bottom: 20px;overflow: hidden;}
+   #men .product_list .list li img{width: 100%; transition-duration: 0.6s;}
+   #men .product_list .list li img:hover{transform: scale(1.05);}
+   #men .product_list .list li h3{font-size: 1.1em; font-weight: bold; margin-bottom:10px; margin-top: -30px; position: relative;}
+   #men .product_list .btn{margin: 0 auto;}
+   /* ----------men end------- */
+   
+   /* ----------detail start------- */
+   #detail .detail_top{position: relative; display: flex;}
+   #detail .detail_top>div{position: relative; width: 50%;}
+   #detail .detail_top_img img{width: 100%;}
+   #detail .detail_top_info{padding-left: 50px; display: flex; flex-direction: column; justify-content: space-evenly; box-sizing: border-box;}
+   #detail .detail_top_info>div:last-child{margin-bottom: 0}
+   #detail .detail_top_info h2{font-size: 1.4em;}
+   #detail .detail_top_info .price{font-size: 1.2em; }
+   #detail .detail_top_info .description li{line-height: 1.6em; font-size: 0.9em;}
+   #detail .detail_top_info h3{font-size: 1em ; font-weight: bold; margin-bottom: 10px;}
+   #detail .detail_top_info .color ul{display: flex; margin-top: 10px;}
+   #detail .detail_top_info .color ul li{margin-right: 10px; padding: 3px; border: 1px solid #FFF; transition-duration: 0.5s;}
+   #detail .detail_top_info .color ul li:hover{border-color: #000;}
+   #detail .detail_top_info .size .size_list{display: none;}
+   #detail .detail_top_info .size .size_select{display: block; margin-bottom: 10px;}
+   #detail .detail_top_info .size .size_select select{height: 40px; width: 47%;}
+
+   #detail .detail_top_info .buy{display: flex; justify-content: space-between;}
+   #detail .detail_top_info .buy .buy_btn{display: block; width: 47%; height:40px; border: 1px solid #000; text-align: center; line-height: 40px; font-size: 1.2em; transition-duration: 0.5s;}
+   #detail .detail_top_info .buy .btn_cart:hover{background-color:#ffd7d8 ;}
+   #detail .detail_top_info .buy .btn_buy:hover{background-color:#b8e3ea ;}
+   #detail .detail_center{position: relative; margin: 100px 0; display: flex; flex-direction: column;}
+   #detail .detail_center>img{width: 50%; margin-bottom: 50px;}
+   #detail .detail_center>img:nth-of-type(2n){align-self: flex-end;}
+   #detail .detail_center>img:last-child{align-self: center}
+   #detail .detail_center .detail_delivery{display: flex; flex-direction: column; align-items: center;}
+   #detail .detail_center .detail_delivery p{color: #999; margin: 50px 0;}
+   #detail .other{position: relative;}
+   #detail .other h3{font-size: 1.4em; margin-bottom: 30px;}
+   #detail .other .other_list{display: flex; justify-content: space-between;}
+   #detail .other .other_list li{width: 32%; text-align: center;}
+   #detail .other .other_list li img{width: 100%;}
+   #detail .other .other_list li h4{font-size: 1.1em; margin:20px 0 10px 0;}
+   /* ----------detail end------- */
+   
+   /* ----------collabo start------- */
+   #collabo .collabo_top{position: relative ; display: flex;}
+   #collabo .collabo_video{width: 60%;}
+   #collabo .collabo_video video{width: 100%;}
+   #collabo .collabo_text{padding-left: 30px; width: 40%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
+   #collabo .collabo_text h3{font-size: 2em; font-weight: normal; margin-bottom: 10px;}
+   #collabo .collabo_list{position: relative; margin-top: 50px;}
+   #collabo .collabo_list h2{font-size: 1.8em; margin-bottom: 30px;}
+   #collabo .collabo_list ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+   #collabo .collabo_list li{width: 32%; margin-bottom: 2%;}
+   #collabo .collabo_list li img{width: 100%; }
+   #collabo .btn{margin: 50px auto;}
+   #collabo .collabo_bottom{position: relative; display: flex; justify-content: center;}
+   #collabo .collabo_bottom a{display: block; width: 80%;}
+   #collabo .collabo_bottom img{width: 100%;}
+   /* ----------collabo end------- */
+      
+   }
+
+
+
+/* ---------  Mobile ---------- */
+@media screen and (max-width:600px){
+
+   /* -------common ------- */
+   .contents{position: relative; width:92%; margin: 100px auto 50px auto;}
+   .contents .page_title{font-size: 1.4em; font-weight: bold; margin-bottom: 50px; }
+   .contents .page_info{font-size: 1em; margin-bottom: 50px; }
+   .btn{display: block; width: 200px; height: 40px; border: 1px solid #000; text-align: center; line-height: 40px; transition-duration: 0.6s;}
+   .btn:hover{background-color: #000; color: #FFF;}
+   
+   
+   /* ----------join start ---------- */
+   #join h2{text-align: center;}
+   #join table{width: 100%; margin: 30px auto;}
+   #join table th,#join table td{ padding: 5px; box-sizing: border-box; display: block;}
+   #join table th{text-align: left; font-weight: normal; font-size: 1em; margin-top: 30px;}
+   #join table td{font-size: 0.9em;}
+   #join table td input[type=text], #join table td input[type=password]{width: 100%; height: 30px; border: 1px solid #222;}
+   #join table td.bd_td>input{width: 32%;}
+   #join table td.bd_td select{width: 32%; height: 32px; border: 1px solid #222;}
+   #join table tr:last-child td input[type=text]{width: 180px;}
+   #join table tr:nth-child(8) th,#join table tr:nth-child(9) th{margin-top: 0;}
+   #join .join_btn{width: 90px; height: 30px; background-color: #222; color: #FFF; font-size:0.9em;}
+   #join .agree{position: relative; margin: 30px 0; text-align: center;}
+   #join .agree>*{margin-bottom: 15px;}
+   #join .agree h3{font-size: 1.2em;}
+   /* ----------join end ---------- */
+   
+   
+   /* -----------login start----------- */
+   #login .login_inner{position: relative; width: 300px; margin: 100px auto; ;}
+   #login .login_inner h2{text-align: center;}
+   #login .login_inner h1 img{width: 200px; display: block; margin: 0 auto;}
+   #login .login_inner div{margin-bottom: 15px;}
+   #login .login_inner #my_id,#login .login_inner #my_pw{width: 100%; border: 1px solid #000; height: 30px;}
+   #login .login_inner form div:nth-child(3){display: flex; justify-content: space-between;}
+   #login .login_inner #login_btn{width: 100%; height: 30px; background-color: #000; color: #FFF;}
+   #login .login_inner .other_login{display: flex; justify-content: space-between;}
+   #login .login_inner .other_login a{display: flex;}
+   #login .login_inner>a:last-child{text-align: center; display: block; color: #666; font-size: 0.9em;}
+   
+   /* -----------login end----------- */
+   
+   
+   /* ----------men start------- */
+   #men .png{margin-bottom: 50px; font-size: 0.8em;}
+   #men .product_list{position: relative;}
+   #men .product_list .filter{position: relative; display: flex; justify-content: flex-end;}
+   #men .product_list .filter img{margin-left: 10px;}
+   #men .product_list .list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+   #men .product_list .list li{width:49%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; padding-bottom: 20px;overflow: hidden;}
+   #men .product_list .list li img{width: 100%; transition-duration: 0.6s;}
+   #men .product_list .list li img:hover{transform: scale(1.05);}
+   #men .product_list .list li h3{font-size: 1.1em; font-weight: bold; margin-bottom:10px; margin-top: -30px; position: relative;}
+   #men .product_list .btn{margin: 0 auto;}
+   /* ----------men end------- */
+   
+   /* ----------detail start------- */
+   #detail .detail_top{position: relative;}
+   #detail .detail_top>div{position: relative;}
+   #detail .detail_top_img img{width: 100%;}
+
+   #detail .detail_top_info{display: flex; flex-direction: column; box-sizing: border-box;}
+   #detail .detail_top_info>*{margin-top: 20px;}
+   #detail .detail_top_info>div:last-child{margin-bottom: 0}
+   #detail .detail_top_info h2{font-size: 1.2em;}
+   #detail .detail_top_info .price{font-size: 1.1em; }
+   #detail .detail_top_info .description li{line-height: 1.4em;}
+   #detail .detail_top_info h3{font-size: 1em ; font-weight: bold; margin-bottom: 10px;}
+   #detail .detail_top_info .color ul{display: flex; margin-top: 10px;}
+   #detail .detail_top_info .color ul li{margin-right: 10px; padding: 3px; border: 1px solid #FFF; transition-duration: 0.5s;}
+   #detail .detail_top_info .color ul li:hover{border-color: #000;}
+   #detail .detail_top_info .size ul{display: none;}
+   #detail .detail_top_info .size .size_select{display: block;}
+   #detail .detail_top_info .size .size_select select{height: 40px; width: 47%;}
+
+   #detail .detail_top_info .buy{display: flex; justify-content: space-between;}
+   #detail .detail_top_info .buy .buy_btn{display: block; width: 47%; height: 40px; border: 1px solid #000; text-align: center; line-height: 40px; font-size: 1em; transition-duration: 0.5s;}
+   #detail .detail_top_info .buy .btn_cart:hover{background-color:#ffd7d8 ;}
+   #detail .detail_top_info .buy .btn_buy:hover{background-color:#b8e3ea ;}
+   #detail .detail_center{position: relative; margin: 100px 0; display: flex; flex-direction: column;}
+   #detail .detail_center>img{width: 100%; margin-bottom: 50px;}
+   #detail .detail_center .detail_delivery{display: flex; flex-direction: column; align-items: center;}
+   #detail .detail_center .detail_delivery p{color: #999; margin: 50px 0;}
+   #detail .other{position: relative;}
+   #detail .other h3{font-size: 1.2em; margin-bottom: 30px;}
+   #detail .other .other_list{display: flex; justify-content: space-between;}
+   #detail .other .other_list li{width: 33%; text-align: center;}
+   #detail .other .other_list li img{width: 100%;}
+   #detail .other .other_list li h4{font-size: 0.9em; margin:20px 0 10px 0;}
+   /* ----------detail end------- */
+   
+   /* ----------collabo start------- */
+   #collabo .collabo_top{position: relative ; display: flex; flex-direction: column;}
+   #collabo .collabo_video{order: 2}
+   #collabo .collabo_video video{width: 100%;}
+   #collabo .collabo_text{box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; order: 1; margin-bottom: 50px;}
+   #collabo .collabo_text h3{font-size: 2em; font-weight: normal; margin-bottom: 10px;}
+   #collabo .collabo_list{position: relative; margin-top: 50px;}
+   #collabo .collabo_list h2{font-size: 1.8em; margin-bottom: 30px;}
+   #collabo .collabo_list ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+   #collabo .collabo_list li{width: 49%; margin-bottom: 2%;}
+   #collabo .collabo_list li img{width: 100%; }
+   #collabo .btn{margin: 50px auto;}
+   #collabo .collabo_bottom{position: relative; display: flex; justify-content: center;}
+   #collabo .collabo_bottom a{display: block; width: 80%;}
+   #collabo .collabo_bottom img{width: 100%;}
+   /* ----------collabo end------- */
+      
+   }

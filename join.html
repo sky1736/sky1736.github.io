@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACOSTE - 회원가입</title>  
+      
+    <link rel="stylesheet" href="css/sub_style.css" type="text/css">
+    
+</head>
+<body>
+    <? include("header.html");?>
+    <section id="join" class="contents">
+        <h2 class="page_title">회원가입</h2>
+        <form method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" id="my_name"></td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" id="my_id"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" id="my_pw"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input type="password" id="my_pwd"></td>
+                </tr>
+                <tr>
+                    <th>생년월일</th>
+                    <td class="bd_td">
+                        <input type="text" id="my_bd1" placeholder="년(4자)">
+                        <select id="my_bd2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select> 
+                        <input type="text" id="my_bd3" placeholder="일">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" id="my_email" placeholder="lacoste@lacoste.com"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" id="my_phone" placeholder="숫자만 입력해주세요."></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+        <label for="phone1">KT</label> <input type="radio" id="phone1" name="phone"> &nbsp;
+        <label for="phone2">SKT</label><input type="radio" id="phone2" name="phone"> &nbsp;
+        <label for="phone3">LG</label><input type="radio" id="phone3" name="phone"> &nbsp;
+        <label for="phone4">알뜰폰</label><input type="radio" id="phone4" name="phone"> &nbsp;
+        <button class="join_btn">인증하기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="text" id="join_num"> 
+                        <button class="join_btn">인증번호 확인</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="agree">
+            <h3>마케팅 정보 수신동의</h3>
+            <p>LACOSTE는 회원님의 개인 정보를 신중히 취급하며 주문을 처리하는 데 필요한 정보만 입력하도록 요청합니다.<br>
+                 귀하의 데이터는 요청하지 않은 발송에 사용되지 않으며 주문처리를 제외하고 제 3자에게 전달되지 않습니다.</p>
+            <div class="agree_list">
+                <input type="checkbox" id="sms">
+                <label for="sns">SMS</label>
+                <input type="checkbox" id="email">
+                <label for="sns">E-MAIL</label>
+            </div>
+            <input type="reset" id="reset" class="join_btn" value="다시작성">
+            <input type="submit" id="submit" class="join_btn" value="가입하기">
+        </div>
+        </form>
+    </section>
+
+    <? include("footer.html");?>
+</body>
+</html>

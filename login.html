@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACOSTE - LOGIN</title>
+    
+    <link rel="stylesheet" href="css/sub_style.css" type="text/css">
+    
+</head>
+<body>
+    <? include("header.html");?>
+    <section id="login" class="contents">
+        <div class="login_inner">
+            <h1><img src="img/lacoste_logo2.png" alt="lacoste"></h1>
+            <h2 class="page_title">회원 로그인</h2>
+            <form method="post">
+                <div><input type="text" id="my_id" placeholder="아이디"></div>
+                <div><input type="password" id="my_pw" placeholder="비밀번호"></div>
+                <div>
+                    <div class="save_id">
+                        <input type="checkbox" id="save_id"> <label for="save_id">아이디 저장</label>
+                    </div>
+                    <div class="find_id">
+                        <a href="#">아이디/비밀번호를 잊으셨나요?</a>
+                    </div>
+                </div>
+                <div><input type="submit" id="login_btn" value="로그인"></div>
+            </form>
+            <div class="other_login">
+                <a href="#"><img src="img/facebook.png" alt="페이스북 로그인">페이스북 로그인</a>
+                <a href="#"><img src="img/naver.png" alt="네이버 로그인">네이버 로그인</a>
+            </div>
+            <a href="#">계정이 없으신가요? 회원가입하기</a>
+        </div>
+    </section>
+
+    <? include("footer.html");?>
+</body>
+</html>

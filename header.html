@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACOSTE</title>
+    <link rel="stylesheet" href="css/common.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            // m_gnb_btn 누르면 m_gnb_wrap나타난다
+            $('.m_gnb_btn').click(function(){
+                $('.m_gnb_wrap').fadeToggle(500)
+            })
+        })
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="top_logo">
+            <a href="index.html"><img src="img/logo.png" alt="lacote"></a>
+        </h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="product.html">Men</a></li>
+                <li><a href="product.html">Women</a></li>
+                <li><a href="product.html">Kids</a></li>
+                <li><a href="#">Online Only</a></li>
+                <li><a href="collabo.html">Lacoste Inside</a></li>
+            </ul>
+        </nav>
+        <nav class="util">
+            <ul>
+                <li><a href="#"><img src="img/search.png" alt="검색"></a></li>
+                <li><a href="join.html"><img src="img/my.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="img/map.png" alt="매장"></a></li>
+                <li><a href="login.html"><img src="img/bag.png" alt="장바구니"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="m_header">
+        <h1 class="m_top_logo">
+            <a href="index.html"><img src="img/logo.png" alt="lacote"></a>
+        </h1>
+        <button class="m_gnb_btn"><img src="img/gnb_btn.png" alt="메뉴버튼"></button>
+    </header>
+    <div class="m_gnb_wrap">
+        <div class="m_gnb_inner">
+            <ul class="m_gnb">
+                <li><a href="product.html">Men</a></li>
+                <li><a href="product.html">Women</a></li>
+                <li><a href="product.html">Kids</a></li>
+                <li><a href="#">Online Only</a></li>
+                <li><a href="collabo.html">Lacoste Inside</a></li>
+            </ul>
+            <ul class="m_util">
+                <li><a href="#"><img src="img/search.png" alt="검색"></a></li>
+                <li><a href="join.html"><img src="img/my.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="img/map.png" alt="매장"></a></li>
+                <li><a href="login.html"><img src="img/bag.png" alt="장바구니"></a></li>
+            </ul>
+        </div>        
+    </div>
+</body>
+</html>
